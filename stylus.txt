@@ -1,0 +1,25 @@
+Stylus是一个CSS预处理器
+
+在SaaS，Less和Stylus中，为什么选择后者呢？因为Stylus是来源于Node.js社区，与js关系密切，所以基于Vue.js的开发，我们选择使用Stylus。
+
+安装：首先装node
+      然后 npm install stylus -g
+
+
+这里在E盘，新建了【stylusexample】文件夹，在里面有新建了【src】文件夹，最后在src中新建了一个【example.styl】
+	在example.styl中编写stylus代码：
+
+		header
+    		   #logo
+        	       border:1px solid red
+		h1
+    		  margin:0
+    		  padding:0
+
+没有分号也没与括号，stylus的语法非常灵活多变
+
+然后在命令框中进入stylusexample文件夹，输入编译命令把.styl文件编译成.css文件		
+			stylus --compress src
+输出所得：
+		header #logo{border:1px solid red}
+		h1{margin:0;padding:0}
